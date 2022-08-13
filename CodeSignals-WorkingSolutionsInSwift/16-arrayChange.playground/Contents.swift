@@ -8,14 +8,14 @@
 
 func solution(inputArray: [Int]) -> Int {
     /*
-     => step refers to the number of
-     => save the original value of input array in tmp and use it for the operations
+     => step refers to the number of well "steps" that we need to make a succeeding num greater than the former by 1
+     => save the original value of input array in tempArray and use it for the operations
      */
     var step = 0
     var tempArray = inputArray
     /*
      compare two consecutive elements and check if the first is greater than the second.
-     in that case, increase the second element at index[i+1] so that it is greater than the first by 1.
+     in that case, increase the second element i.e (at index[i+1]) so that it is greater than the first by 1.
      Also increase the step count which indicates the number of steps it would take to get to a number higher than the previous by 1.
      */
     for i in 0..<tempArray.count - 1 {

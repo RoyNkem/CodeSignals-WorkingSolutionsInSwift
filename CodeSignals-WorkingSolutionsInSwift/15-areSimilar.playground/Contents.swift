@@ -28,7 +28,7 @@ func solution(a: [Int], b: [Int]) -> Bool {
     var checkB = [Int]()
     var notSimilar = 0
     
-    //Loop through elements in arr a and check if the respective elements are same
+    //Loop through elements in arr a and check if the respective elements in arr b are same
     for i in (0..<a.count) {
         if a[i] != b[i] {
             notSimilar += 1
