@@ -10,12 +10,16 @@
  */
 
 func solution(statues: [Int]) -> Int {
+    //initialize empty array to hold desired results
     var result = [Int]()
     
+    //sort the given array in ascending order
     let sortedStatues = statues.sorted()
     
+    //take the first element in sorted array. It will be used as starting point to avoid going through unwanted elements
     var i = sortedStatues.first!
 
+    //loop through the sorted array by 1 step, starting from the first element, and append the elemnt that is not contained in the given array
     while i != sortedStatues.last {
         i += 1
         
@@ -27,5 +31,5 @@ func solution(statues: [Int]) -> Int {
 }
 
 //Test
-let num = [2,5]
+let num = [7,8]
 solution(statues: num)

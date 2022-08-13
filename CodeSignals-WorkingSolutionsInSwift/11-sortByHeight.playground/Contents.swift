@@ -12,7 +12,7 @@ func solution(a: [Int]) -> [Int] {
     let people = a.filter {$0 != -1}.sorted()
     //use makeiterator to retrieve the array's iterator over the elements. This prepares it for looping through
     var peopleIterator = people.makeIterator()
-    //return the next value in the iterator
+    //return the same size of param array with next value in the iterator
     return a.map { ($0 == -1) ? $0 : peopleIterator.next()! }
 }
 

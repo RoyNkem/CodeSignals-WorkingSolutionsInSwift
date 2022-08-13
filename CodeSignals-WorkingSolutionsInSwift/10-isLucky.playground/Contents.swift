@@ -11,7 +11,7 @@
 func isLucky(n: Int) -> Bool {
     guard String(n).count % 2 == 0 else {return false}
     
-    var digit = n.digits
+    let digit = n.digits
     let mid = digit.count/2
     let leftHalf = digit[0..<mid]
     let rightHalf = digit[mid..<digit.count]
@@ -27,12 +27,15 @@ func isLucky(n: Int) -> Bool {
 }
 
 extension BinaryInteger {
-    var digits: [Int] {
-        return String(describing: self).compactMap { Int(String($0)) }
+    var digits: [Int] { // compact map combines map and filter
+        //create a string sequence representing the given value and transforms each chars to individual integers
+        return String(describing: self).compactMap { val in
+            Int(String(val))
+        }
     }
 }
 
 //Test
-let n = 23901
+let n = 239017
 isLucky(n: n)
 
