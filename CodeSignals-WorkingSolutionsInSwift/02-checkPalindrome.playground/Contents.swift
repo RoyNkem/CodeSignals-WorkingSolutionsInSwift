@@ -8,9 +8,13 @@
  */
 
 func checkPalindrome(text: String) -> Bool {
+    /*
+     => filter all non-letters like spaces and punctuations
+     => convert all string characters to lowercase
+     => use "two pointer" algorithm by starting from the two extreme opposite ends (lhs & rhs) of the given text and comparing their values until we arrive at the midpoint of the text
+     */
     let text = text.filter{$0.isLetter}
     guard text.count > 1 else { return true }
-    
     let chars = Array(text.lowercased())
     
     var leftIndex = 0
@@ -28,5 +32,5 @@ func checkPalindrome(text: String) -> Bool {
 }
 
 //Test
-let text = "aroma, amora"
+let text = "halah"
 checkPalindrome(text: text)
