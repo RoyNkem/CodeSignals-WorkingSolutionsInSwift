@@ -22,7 +22,7 @@ func solution(a: [Int], b: [Int]) -> Bool {
     guard a.count == b.count else { return false }
     /*
      Initialize 2 arr to store elements that are not similar
-     notSimilar is a variable that tracks num of elements in arr a that are not same as corresponding element in arr b
+     notSimilar is a variable that tracks num of elements in arr a that are not same compared to corresponding element in arr b
      */
     var checkA = [Int]()
     var checkB = [Int]()
