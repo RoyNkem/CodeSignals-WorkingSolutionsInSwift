@@ -5,11 +5,6 @@
  
  Find the minimal length of the jump enough to avoid all the obstacles.
  
- Example
- 
- => For inputArray = [5, 3, 6, 7, 9], the output should be
- solution(inputArray) = 4.
- 
  Check out the image below for better understanding:
  https://codesignal.s3.amazonaws.com/tasks/avoidObstacles/img/example.png?_tm=1624426122561
  */
@@ -17,7 +12,7 @@
 //MARK: - EXPLANATION OF CHALLENGE
 /*
  This challenge is very tricky, so be careful.
- We are required to get the min length of (number of times) we can jump between obstacles to get to the next free point immediately after obstacle.
+ We are required to get the minimum length of (number of times) we can jump between obstacles to get to the next free point immediately after obstacle.
  => Tip: Always think the goal is to get to the number after the largest obstacle
     
  Example: for [5,3,6,7,9] - largest obstacle is 9
