@@ -28,22 +28,6 @@
                    [4, 4]]
  There are four 3 × 3 squares in the input image, so there should be four integers in the blurred output. To get the first value: (7 + 4 + 0 + 5 + 6 + 2 + 6 + 10 + 7) = 47 / 9 = 5.2222 = 5. The other three integers are obtained the same way, then the surrounding integers are cropped from the final result.
  */
-//
-//func solution(image: [[Int]]) -> [[Int]] {
-//    let rows = image.count
-//    let columns = image[0].count
-//    var blur = [[Int]]()
-//    var sum = 0
-//
-//    for i in 0..<columns {
-//        for j in 0..<rows {
-//            sum += image[j][i]
-//        }
-//    }
-//
-//    blur[0].append(sum/9)
-//    return blur
-//}
 
 func solution(image: [[Int]]) -> [[Int]] {
     /*the result array always have dimension of 2 less than the image"s dimension
