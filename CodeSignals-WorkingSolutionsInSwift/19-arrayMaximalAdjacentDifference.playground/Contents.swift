@@ -22,7 +22,7 @@ func solution(inputArray: [Int]) -> Int {
         absoluteDifference = abs(second - first)
         arrayOfDifference.append(absoluteDifference)
     }
-    return arrayOfDifference.max()!
+    return arrayOfDifference.max() ?? 0 
 }
 
 //Test
